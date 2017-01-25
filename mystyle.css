@@ -22,7 +22,7 @@ body {
 
 .navbar li a {
     display: inline-block;
-    color: #f2f2f2;
+    color: #ffccff;
     text-align: center;
     padding: 20px 20px;
     text-decoration: none;
@@ -36,17 +36,57 @@ body {
 	background-color: #555;
 }
 
-/* Hide the list item that contains the link that should open and close the topnav on small screens */
+/* Hide the list item that contains the link that should open and close the navbar on small screens */
 ul.navbar li.icon {
 	display: none;
 }
 
-#name {
+/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the navbar (li.icon) */
+@media screen and (max-width:680px) {
+  ul.navbar li:not(:first-child) {display: none;}
+  ul.navbar li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+/* The "responsive" class is added to the navbar with JavaScript when the user clicks on the icon. This class makes the navbar look good on small screens */
+@media screen and (max-width:680px) {
+  ul.navbar.responsive {position: relative;}
+  ul.navbar.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.navbar.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.navbar.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+
+
+.name {
+	position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+	margin: auto;
+	width: 290px;
+	height: 50px;
+
+	background-color: #333;
 	padding: 20px 20px;
-	font-size: 30px;
-	font-style: bold;
-	color: #f2f2f2;
-	background-color: #000000
+	font-size: 35px;
+	font-style: bolder;
+	color: #ffccff;
+	border-style: solid;
+	
 }
 
 
