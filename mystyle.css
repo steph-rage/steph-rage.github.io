@@ -1,0 +1,53 @@
+body {
+	background: url("steph-background2.jpg") no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+/*Remove margins, add background color*/
+.navbar {
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* List items side by side */
+.navbar li {
+	float: left;
+}
+
+.navbar li a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 20px;
+    font-style: bold;
+}
+
+/* Change background color of links on hover */
+.navbar li a:hover {
+	background-color: #555;
+}
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.navbar li.icon {
+	display: none;
+}
+
+#name {
+	padding: 20px 20px;
+	font-size: 30px;
+	font-style: bold;
+	color: #f2f2f2;
+	background-color: #000000
+}
+
+
+
