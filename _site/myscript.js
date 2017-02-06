@@ -7,3 +7,21 @@ function myFunction() {
         x.className = "navbar";
     }
 }
+
+function ProjectFunction() {
+	if ($(window).width() <= 680){
+	    var x = document.getElementById("projectlist");
+	    if (x.className === "") {
+	        x.className = "projects";
+	    } else {
+	        x.className = "";
+	    }
+	    var x = document.getElementById("namebox");
+	    if (x.className === "name") {
+	        x.className += " hidden";
+	    } else {
+	        x.className = "name";
+	    }
+	}
+}
+

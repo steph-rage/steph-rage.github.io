@@ -1,3 +1,8 @@
+html{
+ height:100%;
+ min-height:100%;
+ }
+
 body {
 	background: url("steph-background.jpg") no-repeat center center fixed; 
   -webkit-background-size: 100%;
@@ -5,6 +10,7 @@ body {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+   min-height:100%;
 }
 
 @media only screen and (max-width: 767px) {
@@ -75,12 +81,23 @@ ul.navbar li.icon {
     display: block;
     text-align: left;
   }
+  ul.projectlist.cliked li {
+    float: none;
+    display: inline;
+  }
+  ul.projectlist.clicked li a {
+    display: block;
+    text-align: left;
+  }
+  .name.hidden {
+    display: none;
+  }
 }
 
 ul.navbar li:last-child a {
   border-right: none;
 }
-/* projectss */
+/* projects */
 ul.projects {
 	list-style-type: none;
 	position: absolute;
@@ -123,6 +140,12 @@ ul.navbar li:hover a {
 ul.navbar li:hover > a{
   color: #000;
 } 
+
+@media screen and (max-width:680px) {
+  ul.projects {
+    display: inline-block;
+  }
+}
 
 
 .name {
