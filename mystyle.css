@@ -81,14 +81,6 @@ ul.navbar li.icon {
     display: block;
     text-align: left;
   }
-  ul.projectlist.cliked li {
-    float: none;
-    display: inline;
-  }
-  ul.projectlist.clicked li a {
-    display: block;
-    text-align: left;
-  }
   .name.hidden {
     display: none;
   }
